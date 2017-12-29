@@ -1,0 +1,442 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Nashmi Neurolab</title>
+		 <link href="http://www.uvic.ca/assets/template3-4/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+		<link rel="stylesheet" href="./css/styles.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<section>
+			<div class="container">
+				<div class="row" style="background: #005493">
+					<div class="flex-container space-between" id="fire-neurons">
+						<div class="flex-item">
+							<a href="https://www.uvic.ca" target="_blank"><img src="./images/logo/uvic-logo-alt.png" alt="UVic Logo" /></a>
+						</div>
+						<div class="flex-item" id="header-title">Nashmi Neurobiology Lab at the University of Victoria</div>
+						<div class="flex-item"><a href="https://www.uvic.ca/science/biology/" target="_blank"><img src="./images/logo/uvic-stripes.jpg" alt="UVic Brand Colors" /></a></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="board">
+						<div class="board-inner">
+							<ul class="nav nav-tabs" id="myTab">
+							<div class="liner"></div>
+								<li class="active">
+									<a href="#home" data-toggle="tab" title="welcome">
+									<span class="round-tabs one">
+									  <i class="glyphicon glyphicon-home"></i>
+									</span> 
+									</a>
+								</li>
+								<li>
+									<a href="#research" data-toggle="tab" title="research">
+									<span class="round-tabs two">
+									<i class="glyphicon glyphicon-tasks"></i>
+									</span> 
+									</a>
+								</li>
+								<li>
+									<a href="#publications" data-toggle="tab" title="publications">
+									<span class="round-tabs three">
+									<i class="glyphicon glyphicon-book"></i>
+									</span> 
+									</a>
+								</li>
+								<li>
+									<a href="#lab-members" data-toggle="tab" title="lab members">
+									<span class="round-tabs four">
+									  <i class="glyphicon glyphicon-user"></i>
+									</span> 
+									</a>
+								</li>
+								<li>
+									<a href="#teaching" data-toggle="tab" title="teaching">
+									<span class="round-tabs five">
+									  <i class="glyphicon glyphicon-blackboard"></i>
+									</span> 
+									</a>
+								</li>
+								<li>
+									<a href="#resources" data-toggle="tab" title="resources">
+									<span class="round-tabs six">
+								  	<i class="glyphicon glyphicon-link"></i>
+									</span> 
+									</a>
+								</li>
+								<li>
+									<a href="#contact" data-toggle="tab" title="contact">
+									<span class="round-tabs seven">
+								  	<i class="glyphicon glyphicon-send"></i>
+									</span> 
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-content" style="margin-top: -2%;">
+							<div class="tab-pane fade in active" id="home">
+								<h3 class="head text-center">Welcome to Dr. Nashmi's Neuro Lab</h3>
+								<p class="narrow text-center">
+								 Our goal is to understand the role nicotinic receptors play in modulating neurotransmission in the central nervous system and to elucidate their role in a variety of neurological disorders, including nicotine addiction.
+								</p>
+								<div class="row">
+									<div class="col-xs-12 col-sm-12" id="neuron-cell">
+	  									<canvas id="canvas"></canvas>
+	  								</div>
+	  							</div>
+    							<script  src="./js/neuron.js"></script>
+    							<script>
+  									$("#canvas").outerHeight($(window).height()-$("#canvas").offset().top- Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight()));
+    								$(window).on("resize", function(){         				$("#canvas").outerHeight($(window).height()-$("#canvas").offset().top- Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight()));
+    								});
+  								</script>
+
+								<p class="text-center">
+								<a href="mailto:raad@uvic.ca" class="btn btn-success btn-outline-rounded">Contact Us<span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+								</p>
+							</div>
+							<div class="tab-pane fade" id="research">
+								<h3 class="head text-center">Research</h3>
+								<p class="text-center">
+									<img src="./images/research/alpha4YFPSN.jpg" style="padding: 5px;"/>
+									<img src="./images/research/disorders.jpg" style="padding: 5px;" />
+								</p>
+								<hr />
+								<p class="narrow">
+								   A major interest in the lab is to examine the role of nicotinic receptors in modulating neurotransmission in the CNS. We employ a variety of techniques including patch-clamp electrophysiology and optogenetics.  We are also interested in imaging and quantifying the subcellular localization of nicotinic receptors in specific neural circuits using a combination of approaches, including mouse genetic engineering to examine fluorescently tagged receptors in knock-in mice and spectral confocal imaging.
+								</p>
+								<p class="narrow">
+									A significant effort in the lab is devoted to understanding signalling pathways and molecules that interact with nicotinic receptors and alter their function and expression.  The spectroscopic technique, Förster resonance energy transfer (FRET), as well as proteomic approaches will be used to examine the protein-protein interactions and post-translational modifications.
+								</p>
+								<hr />
+								<p class="text-center">
+								<a href="https://www.uvic.ca/science/biology/people/faculty/facpages/nashmi.php" target="_blank" class="btn btn-success btn-outline-rounded colored">Learn more<span style="margin-left:10px;" class="glyphicon glyphicon-tasks"></span></a>
+								</p>
+							</div>
+							<div class="tab-pane fade" id="publications">
+								<h3 class="head text-center">Recent Publications</h3>
+								<p class="text-center">
+									<a href="http://www.cell.com/current-biology/fulltext/S0960-9822(17)30650-4?_returnURL=http%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0960982217306504%3Fshowall%3Dtrue" target="_blank"><img src="./images/publications/cur-bio-2017.jpg" alt="Current Biology 2017" class="publication img-responsive" /></a>
+								</p>
+								<hr />
+								<p class="text-center">
+									<a href="http://www.sciencedirect.com/science/article/pii/S0166432816309093?via%3Dihub" target="_blank"><img src="./images/publications/beh-brain-res-2017.jpg" alt="Behavioral Brain Res 2017" class="publication img-responsive" /></a>
+								</p>
+								<hr />
+								<p class="text-center">
+									<a href="http://www.sciencedirect.com/science/article/pii/S0028390816301605" target="_blank"><img src="./images/publications/neuropharma-2016.jpg" alt="Neuropharmacology 2016" class="publication img-responsive" /></a>
+								</p>
+								<hr />
+								<p class="text-center">
+								<a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=nashmi+r" target="_blank" class="btn btn-success btn-outline-rounded colored" style="background-color: #3e5e9a;">All Publications<span style="margin-left:10px;" class="glyphicon glyphicon-book"></span></a>
+								</p>
+							</div>
+							<div class="tab-pane fade" id="lab-members">
+								<h3 class="head text-center">Lab Members</h3>
+								<div class="row" style="padding-top: 2%;" id="tabs">
+									<div class="col-md-12 col-sm-12 col-xs-12 hover">
+										<img src="./images/people/LabGroupPhoto-Jun15_2017.JPG" class="img-responsive publication"/>
+									</div>
+								</div>
+								<div class="row" style="padding-top: 3%;" id="tabs">
+								    <a href="#">
+								    	<div class="col-md-4 col-sm-4 col-xs-4 hover">
+									        <img src="./images/people/raad.jpg" class="img-responsive publication"/>
+									        <h4 style="color:#2C9ED7;">Raad Nashmi</h4>
+									        <p class="text-center">Principal Investigator<br/>
+									        PostDoc at CalTech<br/>
+									        PhD at U of Toronto</p>
+									        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+								      </div>
+								  	</a>
+								    <a href="#">
+								    	<div class="col-md-4 col-sm-4 col-xs-4 hover">
+									        <img src="./images/people/michael.jpg" class="img-responsive publication"/>
+									        <h4 style="color:#4C8F90;">Michael Minkley</h4>
+									        <p class="text-center">Graduate Student<br />
+									        co-supervised with<br/>
+									        Dr. Patrick Walter</p>
+									        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+								      </div>
+								  	</a>
+								    <a href="#">
+								    	<div class="col-md-4 col-sm-4 col-xs-4 hover">
+									        <img src="./images/people/jasem.jpg" class="img-responsive publication"/>
+									        <h4 style="color:#CF5045;">Jasem Estakhr</h4>
+									        <p class="text-center">Alumni MSc Student<br/>
+									        Currently a PhD student at<br />
+									        U of British Columbia</p>
+									        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+								      	</div>
+								  	</a>
+								</div>
+								<div class="row" style="padding-top: 4%;" id="tabs">
+									<div class="col-md-2 col-sm-2 col-xs-2"></div>
+								    <a href="#">
+								    	<div class="col-md-4 col-sm-4 col-xs-4 hover">
+									        <img src="./images/people/anthony.jpg" class="img-responsive publication"/>
+									        <h4 style="color:#2C9ED7;">Anthony Renda</h4>
+									        <p class="text-center">Alumni MSc Student<br/>
+									        Currently a Registered Nurse<br/>
+									        </p>
+									        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+								      </div>
+								  	</a>
+								    <a href="#">
+								    	<div class="col-md-4 col-sm-4 col-xs-4 hover">
+									        <img src="./images/people/pragya-portrait.jpg" class="img-responsive publication"/>
+									        <h4 style="color:#4C8F90;">Pragya Komal</h4>
+									        <p class="text-center">Alumni PhD Student<br/>
+									        Currently Assistant Professor<br />
+									        BITS University, India</p>
+									        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+								      </div>
+								  	</a>
+								  	<div class="col-md-2 col-sm-2 col-xs-2"></div>
+								</div>
+								<hr />
+								<p class="text-center">
+								<a href="./index_folder/lab-members.html" target="_blank" class="btn btn-success btn-outline-rounded colored" style="background-color: #f1685e;">All Members<span style="margin-left:10px;" class="glyphicon glyphicon-user"></span></a>
+								</p>
+							</div>
+							<div class="tab-pane fade" id="teaching">
+								<div class="text-center">
+								<i class="./img-intro icon-checkmark-circle"></i>
+								</div>
+								<h3 class="head text-center">Teaching</h3>
+								<p class="narrow text-center">
+									Dr. Nashmi currently teaches the following courses:
+								</p>
+								<div class="panel-group">
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="accordian">
+												<ul>
+													<li>
+														<div class="image_title">
+															<a href="https://web.uvic.ca/calendar2017-09/CDs/BIOL/365.html" target="_blank">Biol 365 - Animal Physiology</a>
+														</div>
+														<a href="#">
+															<img src="./images/teaching/frog-alt.jpg" />
+														</a>
+													</li>
+													<li>
+														<div class="image_title">
+															<a href="https://web.uvic.ca/calendar2017-09/CDs/BIOL/460.html" target="_blank">Biol 460 - Honors Seminar</a>
+														</div>
+														<a href="#">
+															<img src="./images/teaching/snail.jpg" />
+														</a>
+													</li>
+													<li>
+														<div class="image_title">
+															<a href="https://web.uvic.ca/calendar2017-09/CDs/BIOL/447.html" target="_blank">Biol 447 - Ion Channel and Disease</a>
+														</div>
+														<a href="#">
+															<img src="./images/teaching/ion-channel.jpg" />
+														</a>
+													</li>
+													<li>
+														<div class="image_title">
+															<a href="https://web.uvic.ca/calendar2017-09/CDs/BIOL/509D.html" target="_blank">Biol 509D - Ion Channel Structure and Function</a>
+														</div>
+														<a href="#">
+															<img src="./images/teaching/channel.jpg" />
+														</a>
+													</li>
+													<li>
+														<div class="image_title">
+															<a href="https://web.uvic.ca/calendar2017-09/CDs/NRSC/500.html" target="_blank">NRSC 500</a>
+														</div>
+														<a href="#">
+															<img src="./images/teaching/nsrc-500.jpg" />
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="resources">
+								<div class="text-center">
+									<i class="img-intro icon-checkmark-circle"></i>
+								</div>
+								<h3 class="head text-center">Resources</h3>
+								<div class="container-fluid animated fadeIn">
+								    <div class="link">
+								        <div class="link-container">
+								            <div class="link-accordion">
+								                <div class="link-option">
+								                    <input type="checkbox" id="toggle1" class="toggle" />
+								                         <label class="link-title" for="toggle1">Neuroscience</label>
+								                    <div class="link-content">
+								                        <p>
+								                        	<a href="http://www.brain.ubc.ca/" target="blank">Brain Research Centre</a><br>
+												            <a href="http://www.can-acn.net/" target="blank">Canadian Association for Neuroscience</a><br>
+												            <a href="http://www.sfn.org/" target="blank">Society for Neuroscience</a><br>
+												            <a href="http://www.uvic.ca/medsci/students/neuroscience/index.php" target="blank">UVic CellularNeuroscience Group</a><br>
+												            <a href="http://medsci.uvic.ca/neuroscience/" target="blank">UVic Neuroscience Program</a><br>
+												            <a href="http://cbr.uvic.ca/" target="blank">UVic Centre for Biomedical Research</a>
+								                        </p>
+								            		</div>
+								        		</div>
+								        		<div class="link-option">
+								            		<input type="checkbox" id="toggle2" class="toggle" />
+								            		<label class="link-title" for="toggle2">Journals</label>
+								            		<div class="link-content">
+								                		<p>
+								                			<a href="http://www.ncbi.nlm.nih.gov/sites/entrez?db=PubMed" target="blank">PubMed</a><br>
+								                			<a href="https://www.webofknowledge.com/" target="blank">Web of Science</a>
+								                		</p>
+								            		</div>
+								        		</div>
+								        		<div class="link-option">
+										            <input type="checkbox" id="toggle3" class="toggle" />
+										            <label class="link-title" for="toggle3">Microscopy</label>
+										            <div class="link-content">
+										                <p>
+										                	<a href="http://www.microscopyu.com/tutorials/java/fluorescence/fpfret/index.html" target="blank">FRET Pair Calculator</a><br>
+												            <a href="http://rsbweb.nih.gov/ij/" target="blank">ImageJ</a><br>
+												            <a href="http://www.invitrogen.com/site/us/en/home/support/Research-Tools/Fluorescence-SpectraViewer.html" target="blank">Invitrogen Fluorescence Spectra Viewer</a><br>
+												            <a href="http://micro.magnet.fsu.edu/primer/" target="blank">Molecular Expressions</a>
+										                </p>
+										            </div>
+								        		</div>
+								        		<div class="link-option">
+										            <input type="checkbox" id="toggle4" class="toggle" />
+										            <label class="link-title" for="toggle4">Electrophysiology</label>
+										            <div class="link-content">
+										                <p>
+										                	<a href="http://www.ucl.ac.uk/pharmacology/dcpr95.html" target="blank">HJCFIT - Single-Channel Analysis Software</a><br>
+												            <a href="http://www.stimfit.org/doc/sphinx/index.html" target="blank">Stimfit - Python for electrophysiology</a><br>
+												            <a href="http://www.qub.buffalo.edu/" target="blank">QUB-Software</a>
+										                </p>
+										            </div>
+										        </div>
+										        <div class="link-option">
+										            <input type="checkbox" id="toggle5" class="toggle" />
+										            <label class="link-title" for="toggle5">Molecular Biology</label>
+										            <div class="link-content">
+										                <p>
+										                	<a href="http://www.fr33.net/translator.php" target="blank">cDNA to protein translator</a><br/>
+												            <a href="http://bibiserv.techfak.uni-bielefeld.de/dialign/submission.html" target="blank">Dialign (multiple sequence alignment)</a><br>
+												            <a href="http://www.ebi.ac.uk/Tools/msa/clustalw2/" target="blank">EMBL ClustalW2 (multiple sequence alignment)</a><br>
+												            <a href="http://ca.expasy.org/prosite/" target="blank">ExPASy Prosite (protein domains and functional sites)</a><br>
+												             <a href="http://www.bioinformatics.org/sms2/group_dna.html" target="blank">Formating DNA/protein sequences</a><br>
+												             <a href="http://genome.ucsc.edu//" target="blank">Genome browser</a><br>
+												            <a href="http://www.ncbi.nlm.nih.gov/guide/" target="blank">NCBI DNA and Protein search</a><br>
+												            <a href="http://tmcalculator.neb.com/#%21/" target="blank">Oligo Calculator (primer melting temp)</a><br>
+												            <a href="http://www.sciencegateway.org/tools/proteinmw.htm" target="blank">Protein Molecular Weight Calculator</a><br>
+												            <a href="http://tools.neb.com/NEBcutter2/index.php" target="blank">Restriction enzyme analysis (NEBcutter)</a><br>
+												            <a href="http://www.ubpred.org/" target="blank">UbPred: Predictor of ubiquitination sites</a> 
+										                </p>
+										            </div>
+										        </div>
+										        <div class="link-option">
+										            <input type="checkbox" id="toggle6" class="toggle" />
+										            <label class="link-title" for="toggle6">Databases</label>
+										            <div class="link-content">
+										                <p>
+										                	<a href="http://genome.ucsc.edu/" target="blank">Addgene</a><br>
+												            <a href="https://bacpacresources.org" target="blank">BAC clones</a><br>
+												            <a href="http://uswest.ensembl.org/Mus_musculus/Info/Index" target="blank">Ensembl (entire mouse genome)</a>
+										                </p>
+										            </div>
+										        </div>
+										        <div class="link-option">
+										            <input type="checkbox" id="toggle7" class="toggle" />
+										            <label class="link-title" for="toggle7">Mouse</label>
+										            <div class="link-content">
+										                <p>
+										                	<a href="http://www.brain-map.org/" target="blank">Allen mouse brain atlas</a><br>
+												            <a href="http://www.gensat.org/index.html" target="blank">Gensat mice</a><br>
+												            <a href="http://jaxmice.jax.org/" target="blank">The Jackson Laboratory</a><br>
+												            <a href="http://www.mbl.org/mbl_main/atlas.html" target="blank">Mouse brain atlas</a><br>
+												            <a href="http://www.mmrrc.org/" target="blank">Mutant mouse regional resource center</a>
+										                </p>
+										            </div>
+										        </div>
+										        <div class="link-option">
+										            <input type="checkbox" id="toggle8" class="toggle" />
+										            <label class="link-title" for="toggle8">Optogenetics</label>
+										            <div class="link-content">
+										                <p>
+										                	<a href="http://doriclenses.com/life-sciences/" target="blank">Doric Optogenetics</a><br>
+												            <a href="https://www.med.upenn.edu/gtp/vectorcore/" target="blank">Penn Vector Core</a><br>
+												            <a href="https://www.med.unc.edu/genetherapy/vectorcore" target="blank">UNC Vector Core</a>
+										                </p>
+										            </div>
+										        </div>
+										        <div class="link-option">
+										            <input type="checkbox" id="toggle9" class="toggle" />
+										            <label class="link-title" for="toggle9">Statistics</label>
+										            <div class="link-content">
+										                <p>
+										                	<a href="http://www.r-project.org/" target="blank">R Statistical Computing</a>
+										                </p>
+										            </div>
+										        </div>
+										        <div class="link-option">
+										            <input type="checkbox" id="toggle10" class="toggle" />
+										            <label class="link-title" for="toggle10">Writing</label>
+										            <div class="link-content">
+										                <p>
+										                	<a href="http://owl.english.purdue.edu/" target="blank">Purdue online writing lab</a><br>
+            												<a href="http://www.zotero.org/" target="blank">Zotero reference manager</a>
+        												</p>
+										            </div>
+										        </div>
+								    		</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="contact">
+								<div class="text-center">
+								<i class="./img-intro icon-checkmark-circle"></i>
+								</div>
+								<h3 class="head text-center">Contact Us</h3>
+								<p class="narrow text-center">
+								 Come join our team. We have openings for bright and enthusiastic students at the MSc or PhD level in the Neuroscience Graduate Program at UVic.
+								</p>
+								<p class="narrow text-center">Please contact Dr. Raad Nashmi through any of the channels listed below:</p>
+								<hr />
+								<p class="narrow text-center">
+								<a href="mailto:raad@uvic.ca" class="btn btn-primary btn-outline-rounded"><span style="margin-right:20px;" class="glyphicon glyphicon-send"></span>raad@uvic.ca</a>
+								</p>
+								<!-- <p class="narrow text-center">raad@uvic.ca</p> -->
+								<hr />
+								<p class="narrow text-center">
+								<a href="#" class="btn btn-warning btn-outline-rounded"><span style="margin-right:20px;" class="glyphicon glyphicon-phone-alt"></span>(250) 721 6169</a>
+								</p>
+								<hr />
+								<p class="narrow text-center">
+									<a href="#" class="btn btn-danger btn-outline-rounded">
+									<span style="margin-right:7px;" class="glyphicon glyphicon-envelope"></span>
+									University of Victoria<br>
+									Department of Biology<br>
+									Petch Building 168<br>
+									3800 Finnerty Road<br>
+									Victoria, BC V8P 5C2<br>
+									Canada</a>
+								</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			$(function(){
+				$('a[title]').tooltip();
+			});
+		</script>
+	</body>
+</html>
